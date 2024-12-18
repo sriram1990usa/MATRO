@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row p-5 ">
+<div class="col-md-11 p-5">
+		<div class="row c11 p-5">
+		<div class="col-md-11 "style="text-align:center; "><h1 style="margin-left:200px">Membership Plan</h1></div>
+		</div>
+		<div class="row c11">
+		<div class="col-md-12" style="margin-left:50">
+		<img src="{% static 'hover.jpg' %}" style="border-radius:80px"height="500px" width="100%"/>
+</div></div>
+		<div class="row ">
+		<div class="col-md-10 offset-1">
+		<div class="row p-3">
+			<div class="col-md-4 pp ">
+			
+		<div class="col-md-11 border border-dark p-2 c12 bg-danger text-light" style="margin-left:80px"><p><h3 class="display-5">BASIC</h3>
+		
+	
+	Days 180</br>
+	INR: 1000</br>
+	Profile Display</br>
+
+	Chating Option</br>
+
+	Express Interest</br>
+
+	Unlimited Profile Search</br>
+
+	Verified Phone Numbers</br>
+	Profile Up-gradation</br>
+	</div>
+	<div class="col-md-11 border p-5 c13" style="margin-left:80px">
+
+Allowed Contacts/Address: <br/>30</br><button class="btn btn-success c48"><a class="nav-link " href="/paytm/">Pay Now</a></button></div>
+
+
+	</div>
+	<div class="col-md-4 pp">
+	<div class="col-md-11 border p-2 c12" style="margin-left:80px"><p><h3 class="display-5">PREMIUM</h3>
+	INR: 1000</br>
+	
+	Days 250</br>
+
+	Profile Display</br>
+
+	Chating Option</br>
+
+	Express Interest</br>
+
+	Unlimited Profile Search</br>
+
+	Verified Phone Numbers</br>
+
+	Profile Up-gradation</br>
+	</div><div class="col-md-11 border p-5 c48 c13" style="margin-left:80px">
+Allowed Contacts/Address:<br/>250</br><button class="btn btn-success "><a class="nav-link " href="/paytm/">Pay Now</a></button></div>
+	</div>
+	
+	<div class="col-md-4 pp">
+		<div class="col-md-11 border c12" style="margin-left:80px"><p><h3 class="display-5">PLATINUM</h3>
+	<span class="spm">INR: 5000</span></br>
+	
+	Days 365</br>
+
+	Profile Display</br>
+
+	Chating Option</br>
+
+	Express Interest</br>
+
+	Unlimited Profile Search</br>
+
+	Verified Phone Numbers</br>
+
+	Profile Up-gradation</br>
+	</P>
+</div><div class="col-md-11 border p-5 c13" style="margin-left:80px">
+Allowed Contacts/Address:<br/>365</br><button class="btn btn-success c48"><a class="nav-link " href="/paytm/">Pay Now</a></button></a></div>
+	</div>
+</div>	
+	
+</div>
+	</div>
+	</div>
+		</div>
+		
+		
+		{% endblock %}
+		
+

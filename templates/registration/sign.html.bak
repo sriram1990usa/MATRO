@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row p-5 c29">
+<div class="col-md-11 p-5 ">
+
+<div class="row p-5 padding-top:30">
+<div class="col-md-10 text-center offset-1 ">
+<form method="post" >
+	{% csrf_token %}
+	{% for field in form %}
+		<div class="row">
+		<div class="col-md-6">
+			<h4>{{ field.label_tag}}</h4></div>
+		<div class="col-md-6">
+
+		{{ field }}
+</div>
+</div>
+
+<br>
+{% for error in field.errors %}
+<p style="color:red;">{{error}}</p>
+
+{% endfor %}
+
+{% endfor %}
+
+<input type="submit" class="btn btn-success c11" value="SIGN UP" style="margin-top:20px; text-align:center;"/>
+
+<h5>Already a member!...then <a href='/login1'>login</a></h5>
+</form>
+</div>
+</div>
+</div>
+</div>
+ {% endblock %}

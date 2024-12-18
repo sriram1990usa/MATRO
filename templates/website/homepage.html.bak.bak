@@ -1,0 +1,38 @@
+{% load static %}
+
+<html>
+<head><title>matrimonial site</title>
+<link href="{% static 'design.css' %}" type="text/css" rel="stylesheet"/>
+<link href="{% static 'bootstrap.min.css' %}" type="text/css" rel="stylesheet"/>
+<link href="{% static 'bootstrap-grid.min.css' %}" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid">
+	
+		<div class="row r1">
+		<div class="col-md-4">
+		<img src="{% static 'logo.png' %}"/><h5 class="c1">Perfect Couple</h5></div>
+		
+		<div class="col-md-3 p-3 c1"><h5>Mail Us</h5>info@perfectcouple.com</div>
+		<div class="col-md-3 p-3 c1"><h5>Call Us</h5>7778889990</div>
+		<div class="col-md-1 p-3 "><button class="btn btn-danger">Login</button></div>
+		<div class="col-md-1 p-3 "><button class="btn btn-danger">Register</button></div>
+		</div>
+		<div class="row  offset-4 r2">
+		<div class="col-md-12">
+		<nav>
+		<ul class="nav">
+		<li><a class="nav-link" href="#">Home</a></li>
+		<li><a class="nav-link" href="#">About us</a></li>
+		<li><a class="nav-link" href="#">Search</a></li>
+		<li><a class="nav-link" href="#">Membership</a></li>
+		<li><a class="nav-link" href="#">Happy stories</a></li>
+		<li><a class="nav-link" href="#">Contact us</a></li>
+		</ul>
+		</nav>
+		</div>
+		</div>
+		
+</div>
+</body>
+</html>

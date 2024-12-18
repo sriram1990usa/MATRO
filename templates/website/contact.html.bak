@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+		<div class="row c18 p-5">
+		<div class="col-md-11 p-5">
+		<div class="row p-5">
+		<div class="col-md-11 c11 p-5"><h1><u>Contact Us</u></h1></div>
+		</div>
+		
+		
+		<form action="{% url 'apply' %}" method='POST'>
+		{% csrf_token %}
+		<div class="row ">
+		<div class="col-md-6">
+		<div class="row">
+		<div class="col-md-6 p-3"><label for="name" ><h4>First Name</h4></label>
+			<input type="text" placeholder="Enter First Name" name="First_Name"class="form-control" id="name"/></div>
+		<div class="col-md-6 p-3"><label for="name"><h4>Last Name</h4></label>
+			<input type="text" placeholder="Enter last Name" name="Last_Name"class="form-control" id="name"/></div>
+		<div class="col-md-6 p-3"><label for="subject"><h4>Subject</h4></label>
+			<input type="text" placeholder="Enter subject" name="Subject"class="form-control" id="subject"/></div>
+			<div class="col-md-6 p-3"><label for="e-mail"><h4>E-mail</h4></label>
+			<input type="text" placeholder="Enter email" name="E_mail"class="form-control" id="email"/></div>
+		</div>
+		
+		<div class="row">
+		<div class="col-md-11 p-3"><label for="Message"><h4>Message</h4></label>
+		<textarea placeholder="Enter Message" class="form-control" name="Message" id="textarea"></textarea></div>
+		</div>
+		<div class="row c11">
+		<div class="col-md-11 p-3"><button class="btn btn-success">Submit</button>
+		</div>
+		
+		<div class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13557.612061818374!2d74.46613422253795!3d31.841246778904146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39193c74a3615127%3A0x403cf15158054947!2sMughalwala%2C%20Sheikhupura%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sin!4v1649399271821!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+		</div>
+
+		</form>
+		</div>
+		</div>
+		
+		
+		{% endblock %}
+		
+		
+		
+	

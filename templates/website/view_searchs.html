@@ -1,0 +1,18 @@
+{% extends './base.html' %}
+{% load static %}
+{% block content %}
+
+    <h3> from view_searchs.html </h3>
+    <h2>{{ searchs.name }}</h2>
+    <p>Age: {{ searchs.age }}</p>
+    <p>Gender: {{ searchs.gender }}</p>
+    <p>Bio: {{ searchs.bio }}</p>
+
+    {% if viewed_searchs.shortlisted %}
+        <p>This searchs is shortlisted.</p>        
+        <a href="{% url 'shortlisted_searchs' %}"> View All Shortlisted</a>
+    {% else %}
+        <a href="{% url 'shortlist_searchs' searchs.id %}">Shortlist this profile</a>
+    {% endif %}
+    
+{% endblock content %}

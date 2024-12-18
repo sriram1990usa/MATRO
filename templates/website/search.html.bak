@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+		<div class="row c10 p-5">
+		<div class="col-md-12 p-5">
+		<div class="row p-5">
+		<div class="col-md-11"><h1>Search</h1></div>
+		</div>
+		<form action="{% url 'apply1' %}" method='GET'>
+		{% csrf_token %}
+		<div class="row">
+		<div class="col-md-6 offset-3">
+		<div class="row p-2">
+		<div class="col-md-6">
+		<h4><label for="g">Gender</label></h4>
+		<select class="form-control" name="Gender" id="g" required>
+		<option type="">Select>></option>
+		<option> Male </option>
+		<option> Female </option>
+		</select></div>
+		<div class="col-md-6">
+		<h4><label for="m">Maritial Status</label></h4>
+		<select class="form-control" name="Maritial_status" id="m" required>
+		<option type="">Select>></option>
+		<option>Unmarried</option>
+		<option>Widowed</option>
+		<option>Divorced</option>
+		<option>Any</option>
+		</select></div>
+		</div>
+	
+		
+		<div class="row">
+		<div class="col-md-6">
+		<h4><label for="a">Select From Age</label></h4>
+		<select class="form-control" name="age" id="a" required>
+		<option type="">Select>></option>
+		<option>21</option>
+		<option>22</option>
+		<option>23</option>
+		<option>24</option>
+		<option>25</option>
+		<option>26</option>
+		<option>27</option>
+		<option>28</option>
+		<option>29</option>
+		<option>30</option>
+		<option>31</option>
+		<option>32</option>
+		<option>33</option>
+		<option>34</option>
+		<option>35</option>
+		<option>36</option>
+		<option>37</option>
+		<option>38</option>
+		<option>39</option>
+		<option>40</option>
+		</select></div>
+		
+		
+		<div class="col-md-6">
+		<h4><label for="a1" >Select to Age</h4></label>
+		<select class="form-control" name="age1"  id="a1" required>
+		<option type="">Select>></option>
+		<option>21</option>
+		<option>22</option>
+		<option>23</option>
+		<option>24</option>
+		<option>25</option>
+		<option>26</option>
+		<option>27</option>
+		<option>28</option>
+		<option>29</option>
+		<option>30</option>
+		<option>31</option>
+		<option>32</option>
+		<option>33</option>
+		<option>34</option>
+		<option>35</option>
+		<option>36</option>
+		<option>37</option>
+		<option>38</option>
+		<option>39</option>
+		<option>40</option>
+		</select></div>
+		</div>
+		
+		
+		<div class="row p-2">
+		<div class="col-md-6">
+		<h4><label for="r">Select Religion</label></h4>
+		<select class="form-control" name="religion" id="r" required>
+		<option type="">Select>></option>
+		<option>Hindu</option>
+		<option>Sikh</option>
+		<option>Muslims</option>
+		<option>Christians</option>
+		<option>Any</option>
+		</select>
+		</div>
+		
+		
+		<div class="col-md-6">
+		<h4><label for="e">Education</label></h4>
+		<select class="form-control" name="education" id="e" required>
+		<option type="">Select>></option>
+		<option>CFA (Chatared Financial Analyst)</option>
+		<option>CA (Chatared Accountant)</option>
+		<option>ICWA</option>
+		<option>Integrated P.G.</option>
+		<option>M.Arch.(Architecture)</option>
+		<option>M.Ed.(Education)</option>
+		<option>M.Lib.Sci.(Library Sciences)</option>
+		<option>M.plan(Planing)</option>
+		<option>Masters in Fashion Technology</option>
+		<option>Masters in Health Administration</option>
+		<option>Master  of Hospital Administration</option>
+		<option>mba</option>
+		<option>MCA/PGDCA</option>
+		<option>ME/M.TECH/MS</option>
+		<option>MFA (Fine Arts)</option>
+		<option>ML/LLM (Law)</option>
+		<option>MSW(Social work)</option>
+		<option>PG Diploma</option>
+		<option>BCA</option>
+		<option>B.A</option>
+		<option>B.SCI</option>
+		<option>B.A.LLB</option>
+		<option>BBA</option>
+		<option>B.ED</option>
+		<option>B.ARCH.</option>
+		<option>B.LIB</option>
+		<option>B.COM</option>
+		<option>12th</option>
+		<option>10th</option>
+		<option>other</option>
+		</select>
+		</div></div>
+		<div class="row p-2">
+		<div class="col-md-12">
+		<h4><label for="o">Select Occupation</label></h4>
+		<select class="form-control" name="occupation" id="o" required>
+		<option type="">Select>></option>
+		<option>Media</option>
+		<option>Agriculture</option>
+		<option>Architectue & Design</option>
+		<option>Artists</option>
+		<option>Animators & Web Designers</option>
+		<option>Banking</option>
+		<option>Insurance & Finacial Services</option>
+		<option>Beauty</option>
+		<option>Fashion Designers</option>
+		<option>Business owner</option>
+		<option>Export & Import</option>
+		<option>Govt. Employee</option>
+		<option>Finance & Accounts</option>
+		<option>Healthcare</option>
+		<option>Doctors</option>
+		<option>Engineer</option>
+		<option></option>
+		<option>Advocate</option>
+		<option>Merchant Navy</option>
+		<option></option>
+		<option></option>
+		<option></option>
+		<option>Pilot</option>
+		<option></option>
+		<option></option>
+		<option></option>
+		<option></option>
+		<option></option>
+		<option>Business</option>
+		<option>Pvt. Job</option>
+		</select>
+		</div>
+		</div>
+		<input type="hidden" name="approval" value="approval">
+		<div class="row p-3 c11">
+		<div class="col-md-6"><input type="submit" name="Search" value="Search" class="btn btn-success" ></button></div>
+		<!--<div class="col-md-6"><button class="btn btn-success c43"><a class="nav-link" href='/searchr/'>Search Groom</a></button>-->
+		</div>
+		
+		</div>
+		</form>
+		</div>	
+</div>
+</div>
+
+
+		{% endblock %}
+

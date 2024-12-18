@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row p-5" id="bg">
+<div class="col-md-12 p-5">
+<div class="row p-5">
+<div class="col-md-8 offset-2 p-5">
+<form method="post">
+{% csrf_token %}
+	<h4>{{ form.as_p}}</h4>
+	<button class="btn btn-success " value="login" style="text-align:center">Login</button>
+	</form>
+	</div>
+	<h5>You don't have any account&nbsp;<a href="/log/">Create New Account</a></h5>
+	</div>
+	</div>
+	</div>
+ {% endblock %}

@@ -1,0 +1,318 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+		
+		
+		<div class="row c29 ">
+		<div class="col-md-10 offset-1 ">
+		
+		<div class="row p-5 c11 ">
+		<div class="col-md-11 c40"><h1>Registration</h1></div></div>
+	
+		
+		<div class="row">
+		<div class="col-md-6">
+		<form action='/insertregister/' method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		
+		<input type="hidden" name="user" value="{{ user.id }}" />
+	    <label><h5>First Name</h5></label>
+		<input type="text" placeholder="First Name" name="name" class="form-control" id="first" required>
+		</div>
+		<div class="col-md-6">
+		<label><h5>Last Name</h5></label>
+		<input type="text" placeholder="Last Name" name="lastname" class="form-control" id="last" required></div>
+		</div>
+		
+		
+		<div class="row">
+		<div class="col-md-6">
+		
+	    <label><h5>Email</h5></label>
+		<input type="email" placeholder="Enter Email" name="email" class="form-control" id="email" required>
+		</div>
+		<div class="col-md-6">
+		<label><h5>Password</h5></label>
+		<input type="password" placeholder="Enter Password" name="password" class="form-control" id="password" required></div>
+		
+		</div>
+		
+		<div class="row ">
+		<div class="col-md-6">
+		<label><h5>Matrimony Profile by</h5></label>
+		<select class="form-control" name="profileby">
+		
+		<option value="">Select>></option>
+		<option>Self</option>
+		<option>Father</option>
+		<option>Mother</option>
+		<option>Brother</option>
+		<option>Sister</option>
+		<option>Friend</option>
+		<option>Son</option>
+		<option>Daughter</option>
+		</select>
+		</div>
+		<div class="col-md-6">
+		<label><h5>Gender</h5></label>
+		<select class="form-control" name="Gender">
+		<option value="">Select Gender>></option>
+		<option>Male</option>
+		<option>Female</option>
+		</select>
+		</div>
+		</div>
+		
+		<div class="row p-3">
+		<div class="col-md-6">
+		
+	    <label><h5>Age</h5></label>
+		<input type="number" class="form-control" name="age">
+		</div>
+		<div class="col-md-6">
+		<label><h5>Image</h5></label>
+		<input type="file" class="form-control" name="Pic1"/>
+	    <!--<label><h5>Time</h5></label>
+		<input type="time" class="form-control" name="time">-->
+		</div>
+		</div>
+		
+		<div class="row p-3">
+		<div class="col-md-6">
+		
+	    <label><h5>Maritial Status</h5></label>
+		<select class="form-control" name="Maritial_status">
+		
+		<option value="">Select>></option>
+		<option>Unmarried</option>
+		<option>Widowed</option>
+		<option>Divorced</option>
+		</select>
+		</div>
+		<div class="col-md-6">
+		<label><h5>Religion</h5></label>
+		<select class="form-control" name="religion">
+		<option value="">Select>></option>
+		<option>Hindu</option>
+		<option>Sikh</option>
+		<option>Muslims</option>
+		<option>Christians</option>
+		<option>Any</option>
+		</select>
+		</div>
+		</div>
+		<div class="row p-3">
+		<div class="col-md-6">
+		<h4><label>Select Occupation</label></h4>
+		<select class="form-control" name="occupation">
+		<option type="">Select>></option>
+		<option>Media</option>
+		<option>Agriculture</option>
+		<option>Architectue & Design</option>
+		<option>Artists</option>
+		<option>Animators & Web Designers</option>
+		<option>Banking</option>
+		<option>Insurance & Finacial Services</option>
+		<option>Beauty</option>
+		<option>Fashion Designers</option>
+		
+		<option>Export & Import</option>
+		<option>Govt. Employee</option>
+		<option>Finance & Accounts</option>
+		<option>Healthcare</option>
+		<option>Doctors</option>
+		<option>Engineer</option>
+		
+		<option>Advocate</option>
+		<option>Merchant Navy</option>
+		<option>Pvt. Job</option>
+		<option>Business</option>
+		</select>
+	    <!--<label><h5>Language</h5></label>
+		<select class="form-control" name="language">
+		
+		<option value="">Select>></option>
+		<option>Hindi</option>
+		<option>English</option>
+		<option>Punjabi</option>
+		<option>Bengali</option>
+		<option>Urdu</option>
+		<option>Telugu</option>
+		<option>Kannada</option>
+		<option>Tamil</option>
+		<option>Marwadi</option>
+		<option>Assamesse</option>
+		<option>Baluchi</option>
+		<option>Bhojpuri</option>
+		<option>Garhwali</option>
+		<option>Dogri</option>
+		
+		</select>-->
+		</div>
+		<div class="col-md-6">
+		<label><h5>Qualification</h5></label>
+		<select class="form-control" name="education">
+		<option value="">Select>></option>
+		<option>CFA (Chatared Financial Analyst)</option>
+		<option>CA (Chatared Accountant)</option>
+		<option>ICWA</option>
+		<option>Integrated P.G.</option>
+		<option>M.Arch.(Architecture)</option>
+		<option>M.Ed.(Education)</option>
+		<option>M.Lib.Sci.(Library Sciences)</option>
+		<option>M.plan(Planing)</option>
+		<option>Masters in Fashion Technology</option>
+		<option>Masters in Health Administration</option>
+		<option>Master  of Hospital Administration</option>
+		<option>MBA/PGDM</option>
+		<option>MCA/PGDCA</option>
+		<option>ME/M.TECH/MS</option>
+		<option>MFA (Fine Arts)</option>
+		<option>ML/LLM (Law)</option>
+		<option>MSW(Social work)</option>
+		<option>PG Diploma</option>
+		<option>BCA</option>
+		<option>B.A</option>
+		<option>B.SCI</option>
+		<option>B.A.LLB</option>
+		<option>BBA</option>
+		<option>B.ED</option>
+		<option>B.ARCH.</option>
+		<option>B.LIB</option>
+		<option>B.COM</option>
+		<option>12th</option>
+		<option>10th</option>
+		<option>other</option>
+		</select>
+		</div>
+		</div>
+		<div class="row">
+		<div class="col-md-6">
+		<label><h5>Height</h5></label>
+		<select class="form-control" name="height">
+		
+		<option value="">Select>></option>
+		<option>5 feet 0 inch</option>
+		<option>5 feet 1 inch</option>
+		<option>5 feet 2 inch</option>
+		<option>5 feet 3 inch</option>
+		<option>5 feet 4 inch</option>
+		<option>5 feet 5 inch</option>
+		<option>5 feet 6 inch</option>
+		<option>5 feet 7 inch</option>
+		<option>5 feet 8 inch</option>
+		<option>5 feet 9 inch</option>
+		<option>6 feet 0 inch</option>
+		<option>6 feet 1 inch</option>
+		<option>6 feet 2 inch</option>
+		<option>6 feet 3 inch</option>
+		<option>6 feet 4 inch</option>
+		<option>6 feet 5 inch</option>
+		<option>6 feet 6 inch</option>
+		<option>6 feet 7 inch</option>
+		<option>6 feet 8 inch</option>
+		<option>6 feet 9 inch</option>
+		<option>7 feet 0 inch</option>
+		
+		
+		</select>
+		</div>
+		<div class="col-md-6">
+		<label><h5>Weight</h5></label>
+		<select class="form-control" name="weight">
+		<option value="">Select>></option>
+		<option>50</option>
+		<option>51</option>
+		<option>52 </option>
+		<option>53</option>
+		<option>54 </option>
+		<option>55 </option>
+		<option>56 </option>
+		<option>57</option>
+		<option>58</option>
+		<option>59 </option>
+		<option>60</option>
+		<option>61 </option>
+		<option>62 </option>
+		<option>63 </option>
+		<option>64</option>
+		<option>65 </option>
+		<option>66 </option>
+		<option>67 </option>
+		<option>68</option>
+		<option>69</option>
+		<option>70 </option>
+		<option>71 </option>
+		<option>72</option>
+		<option>73</option>
+		<option>74</option>
+		<option>75 </option>
+		<option>76</option>
+		<option>77 </option>
+		<option>78</option>
+		<option>79</option>
+		<option>80</option>
+		<option>81 </option>
+		<option>82 </option>
+		<option>83 </option>
+		<option>84 </option>
+		<option>85 </option>
+		<option>86</option>
+		<option>87 </option>
+		<option>88</option>
+		<option>89 </option>
+		<option>90</option>
+		
+		</select>
+		</div>
+		</div>
+		<div class="row">
+		<div  class="col-md-6">
+		
+		<label><h5>Complexion</h5></label>
+		<select class="form-control" name="complexion">
+		<option value="">Select>></option>
+		<option>Fair</option>
+		<option>Medium Skin </option>
+		<option>Olive Skin</option>
+		<option>Brown Skin</option>
+		<option>Black Skin</option>
+		</select>
+
+				</div>
+		<div class="col-md-6">
+		
+		<label><h5>Id Proof.</h5></label>
+		<input type="file" class="form-control" name="Pic2" accept=".jpg,.pdf,.png"/>
+	    <!--<label><h5>Time</h5></label>
+		<input type="time" class="form-control" name="time">-->
+		
+		</div>
+		</div>
+		<div class="row p-3">
+		<div class="col-md-11">
+		<input type="hidden" name="approval" value="non_approval">
+		<input type="hidden" name="slist" value="">
+		</div></div>
+		<div class="row c30">
+		<div class="col-md-11">
+
+		<button class="btn btn-success">Submit</button>
+		
+		
+		</div>
+		</form>
+	
+		</div></div>
+		
+	
+		
+		
+		
+		{% endblock %}
+		
+		
+		
+		
+		</body>
+		</html>

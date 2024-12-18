@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+		<div class="row c24">
+		<div class="col-md-10 offset-1">
+		
+		<div class="row p-5 c11 ">
+		<div class="col-md-11"><h1>Terms & Conditions</h1></div></div>
+		<div class="row">
+		<div class="col-md-11"><p>Welcome to perfectcouple.com . In order to use the 
+		perfectcouple.com Site , you must Register as a member of the Site  and agree to be 
+		bound by these Terms of Use . If you wish to become a Member and communicate with other
+		Members and make use of the service , read these Terms of Use and follow the instructions
+		in the Registration process. This Agreement sets out the legally binding terms for your
+		membership. This Agreement may be modified by perfectcouple.com from time to time 
+		effective upon notice to you as a Member. Whenever there is a change in the Terms of Use,
+		perfectcouple.com will intimate you of such change. Your continued use of the Site
+		pursuant to such change will constitute deemed acceptance of such changes.</p>
+		</div>
+		</div>
+		<div class="row p-5  ">
+		<div class="col-md-11"><h4>1. Eligibility</h4></div></div>
+		<div class="row">
+		<div class="col-md-11"><p>You must be at least 18 years of age or over to Register as a
+		member of perfectcouple.com or use this Site. Membership to the Site is void where 
+		prohibited. Your use of this Site represents and warrants that you have the right, 
+		authority, and capacity to enter into this Agreement and to abide by all of the terms 
+		and conditions of this Agreement. This site is not meant to encourage and/or promote 
+		illicit sexual relations or extra marital affairs. If Domainname.com discovers or becomes
+		aware that any member is using this site to promote or engage or indulge in illicit 
+		sexual relations or extra marital affairs his/her membership will be terminated forthwith
+		without any refund and without any liability to perfectcouple.com . perfectcouple.com 's
+		discretion to terminate shall be final and binding.</p>
+		</div>
+		</div>
+		
+		<div class="row p-5  ">
+		<div class="col-md-11"><h4>2. Term.</h4></div></div>
+		<div class="row">
+		<div class="col-md-11"><p>This Agreement will remain in full force and effect while you
+		use the Site and/or are a Member of perfectcouple.com . You may terminate your membership
+		at any time, for any reason by informing perfectcouple.com in writing to terminate your 
+		Membership. In the event you terminate your membership, you will not be entitled to a 
+		refund of any unutilized subscription fees. perfectcouple.com may terminate your access to
+		the Site and/or your membership for any reason which shall be effective upon sending 
+		notice of termination to you at the email address you provide in your application for
+		membership or such other email address as you may later provide to perfectcouple.com . 
+		If perfectcouple.com terminates your membership because of your breaching the Agreement,
+		you will not be entitled to any refund of any unused Subscription fees. Even after this
+		Agreement is terminated, certain provisions will remain in effect including sections 
+		4,5,7,9 -12, inclusive, of this Agreement.
+
+.</p>
+		</div>
+		</div>
+		<div class="row p-5  ">
+		<div class="col-md-11"><h4>3. Non-Commercial Use by Members.</h4></div></div>
+		<div class="row">
+		<div class="col-md-11"><p>The perfectcouple.com Site is for the personal use of 
+		individual members only, and may not be used in connection with any commercial endeavors.
+		This includes providing links to other websites, whether deemed competitive to 
+		perfectcouple.com or otherwise. Organizations, companies, and/or businesses may not
+		become Members of perfectcouple.com and should not use the perfectcouple.com Service or
+		Site for any purpose. Illegal and/or unauthorized uses of the Site, including 
+		unauthorized framing of or linking to the Site will be investigated, and appropriate
+		legal action will be taken, including without limitation, civil, criminal, and
+		injunctive redress.</p>
+		</div>
+		</div>
+		<div class="row p-5  ">
+		<div class="col-md-11"><h4>4. Other Terms of Use by Members.</h4></div></div>
+		<div class="row">
+		<div class="col-md-11"><p>You may not engage in advertising to, or solicitation of, 
+		other Members to buy or sell any products or services through the Service. You will not 
+		transmit any chain letters or junk email to other perfectcouple.com Members. Although 
+		perfectcouple.com cannot monitor the conduct of its Members on the perfectcouple.com 
+		Site, it is also a violation of this Agreement to use any information obtained from the 
+		Service in order to harass, abuse, or harm another person, or in order to contact, 
+		advertise to, solicit, or sell to any Member without their prior explicit consent. In
+		order to protect perfectcouple.com and/or our Members from any abuse/misuse,
+		perfectcouple.com reserves the right to restrict the number of communications/profile 
+		contacts & responses/emails which a Member may send to other Member(s) in any 24-hour 
+		period to a number which perfectcouple.com deems appropriate in its sole discretion. 
+		You will not send any messages to other Members that are obscene, lewd, licentious, and
+		defamatory, promote hatred and/or are racial or abusive in any manner. Transmission of 
+		any such messages shall constitute a breach of this Agreement and perfectcouple.com
+		Shall be entitled to terminate your membership forthwith. perfectcouple.com reserves the 
+		right to screen messages that you may send to other Member(s) and also regulate the
+		number of your chat sessions in its sole discretion.
+</p>
+		</div>
+		</div>
+		<div class="row p-5  ">
+		<div class="col-md-11"><h4>6. Other</h4></div></div>
+		<div class="row">
+		<div class="col-md-11"><p>By becoming a Member of the Site / perfectcouple.com Service, 
+		you agree to receive certain specific emails from perfectcouple.com This Agreement,
+		accepted upon use of the Site and further affirmed by becoming a Member of the 
+		perfectcouple.com Service, contains the entire agreement between you and perfectcouple.
+		com regarding the use of the Site and/or the Service. If any provision of this Agreement 
+		is held invalid, the remainder of this Agreement shall continue in full force and effect.
+		</p>
+
+
+		</div>
+		</div>
+		
+		</div>
+		</div>
+		{% endblock %}
+		</body>
+		</html>

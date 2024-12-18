@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+	
+
+	
+	
+	
+					<div class="row p-5 c44">
+	<div class="col-md-11" >
+	<div class="col-md-11" >
+	<div class="row c11">
+	<div class="col-md-11  c40"><h1>SEARCH RESULTS</h1>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="row p-3">
+	<div class="col-md-10 offset-1">
+	<div class="row">
+	{% for apply1 in data %}	
+	<div class="col-md-4">
+	<div class="col-md-11 ">
+	<img src="/media/{{ apply1.Pic1}}" height="300px" width="100%"/>
+	<h6>Name:-"{{ apply1.name}}"</h6>
+	<h6>Gender:-"{{ apply1.Gender}}"</h6>
+	<h6>Maritial Status:-"{{ apply1.Maritial_status}}"</h6>
+	<h6>Age:-"{{ apply1.age}}"</h6>
+	<h6>Religion:-"{{ apply1.religion}}"</h6>
+	<h6>Education:-"{{ apply1.education}}"</h6>
+	<h6>Occupation:-"{{ apply1.occupation}}"</h6>
+	<input type="hidden" name="user" value="{{ user.id }}" />
+<form method="post" action="{% url 'slists' %}">
+{% csrf_token %}
+<input type="hidden" name="slist" value="{{apply1.id}}"/>
+	<button class="btn btn-danger" >Short</button>
+	
+	
+	</form>
+		</div>
+		</div>
+	{% endfor %}
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	{% endblock %}

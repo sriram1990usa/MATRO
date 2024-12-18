@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+		    
+	
+				<div class="row p-5 c44">
+	<div class="col-md-11" >
+	<div class="col-md-11" >
+	<div class="row c11">
+	<div class="col-md-11  c40"><h1>SEARCH RESULTS</h1>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="row p-3">
+	<div class="col-md-10 offset-1">
+	<div class="row">
+		
+	<div class="col-md-4">
+	<div class="col-md-11 ">
+	<img src="/media/{{ searchs.Image}}" height="200px" width="100%"/>
+	<h6>Name:-"{{searchs.name}}"</h6>
+	<h6 class="p-2">Gender:-"{{searchs.Gender}}"</h6>
+	<h6>Maritial Status:-"{{searchs.Maritial_status}}"</h6>
+	<h6>Age:-"{{searchs.age}}"</h6>
+	<h6>Religion:-"{{searchs.religion}}"</h6>
+	<h6>Education:-"{{searchs.education}}"</h6>
+	<h6>Occupation:-"{{searchs.occupation}}"</h6>
+	<a href="/blogdetail/{{blogs.id}}" class="filled button"><button class="btn btn-success padding-top:10 padding-bottom:10">Read More>></button></a>
+	
+	
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	
+{% endblock %}

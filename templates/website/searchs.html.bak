@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+	
+
+	
+	
+	
+					<div class="row p-5 c44">
+	<div class="col-md-11" >
+	<div class="col-md-11" >
+	<div class="row c11">
+	<div class="col-md-11  c40" style="margin-left:50px"><h1>SEARCH RESULTS</h1>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="row p-3">
+	<div class="col-md-10 offset-1">
+	<div class="row">
+	{% for searchs in data %}	
+	<div class="col-md-4">
+	<div class="col-md-11 ">
+	<img class="c47" src="/media/{{ searchs.Image}}" height="200px" width="100%"/>
+	<h6>Name:-"{{searchs.name}}"</h6>
+	<h6>Gender:-"{{searchs.Gender}}"</h6>
+	<h6>Maritial Status:-"{{searchs.Maritial_status}}"</h6>
+	<h6>Age:-"{{searchs.age}}"</h6>
+	<h6>Religion:-"{{searchs.religion}}"</h6>
+	<h6>Education:-"{{searchs.education}}"</h6>
+	<h6>Occupation:-"{{searchs.occupation}}"</h6>
+
+	
+	
+	
+	</div>
+	</div>
+	{% endfor %}
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	{% endblock %}

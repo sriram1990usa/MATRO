@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+		<div class="row c9 ">
+		<div class="col-md-12 c38">
+		<div class="row  offset-4 p-5" >
+		<div class="col-md-4"><h1>ABOUT US</h1></div>
+		</div>
+		
+		<div class="row offset-1" id="d5">
+		<div class="col-md-10"><p>This site provides an opportunity to the all community of the 
+		world to reach out to each other for finding suitable marriage alliances. The site 
+		displays matrimonial ads about the registered members who are looking out for the 
+		marriage alliances either for themselves or for their kith and kin.</br> One can find 
+		matrimonial ads of all community belonging to all castes from all over the 
+		world. Ads can be registered online and immediately available for display. The service 
+		means we provide contact details of the suitable matches with the concern of the other
+		party. Once paid will not be refundable.</br> We are not responsible for the authenticity of 
+		the information contained in the matrimonial ad and urge the viewer of the ad to directly
+		contact the concerned member if he/she is interested for alliance.If the proposed 
+		Bride/Groom refuses the proposal pellisandadi is not responsible for their decision.As 
+		all you know we cannot force anyone to marry a particular person.</p></div>
+	</div>
+	<div class="row ">
+	<div class="col-md-10"><h3>Other Salient Features</h3></div>
+	</div>
+	<div class="row" id="d6">
+	<div class="col-md-11">
+	<ul>
+	<li>Earch our database based on generally followed criteria like Age and Caste and 
+	optionally you can go for advance search by giving other details like profession, 
+	qualification, presently residing, residential status, marital status and height.</li>
+	<li>Simple and Convenient form for registration.</li>
+	This site is built by using latest in available web technologies and we assure you of fast 
+	and friendly service.</li>
+	<li>You can modify or delete your ad by yourself anytime during the ad period. There is also
+	no restriction on any number of times you can modify your ad. The ad code however will
+	remain the same what is allotted to you initially at the time of registration.The registered 
+	ad will be displayed till the party delete themselves or they inform to the webmaster for
+	deletion.</li>
+	<li>While you can choose your password to modify or delete your ad, In case you forget your
+	password we can mail the password to your email address as given by you in the registration 
+	form. We cannot help you if you forget what email address was given to us.</li>
+	<li>We are not responsible for the contents in the advertisement submitted by the people 
+	giving their matrimonial ads and the responsibility solely rests on the person who has 
+	submitted the information. See our Terms Of Service for further details.</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+	{% endblock %}
+
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+	
+
+	
+	
+	
+					<div class="row p-5 c41">
+	<div class="col-md-11" >
+	<div class="col-md-11" >
+	<div class="row c40">
+	<div class="col-md-11" style="text-align:center; margin-left:100px;"><h1>BLOGS</h1>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="row p-3">
+	<div class="col-md-10 offset-1">
+	<div class="row" style="border-radius:30px;">
+	{% for blogs in bl %}	
+	<div class="col-md-4">
+	<div class="col-md-11 ">
+	<img src="/media/{{ blogs.Image}}" height="200px" width="100%"/>
+	<h6 class="p-2">"{{blogs.Title}}"</h6>
+	<h6>"{{blogs.Date}}"</h6>
+	<p>"{{blogs.Des | truncatechars:300}}"</p>
+	<a href="/blogdetail/{{blogs.id}}" class="filled button"><button class="btn btn-success padding-top:10 padding-bottom:10"style="margin-top:20px; margin-bottom:30px;">Read More>></button></a>
+	
+	
+	
+	</div>
+	</div>
+	{% endfor %}
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	
+	{% endblock %}

@@ -1,0 +1,179 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row" id="slider">
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="row">
+  <div class="col-md-10 offset-1">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'pic1.jpg' %}" height="700px" width="100%"class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'pic3.jpg'%}" height="700px" width="100%" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'pic6.jpg' %}" height="700px" width="100%" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+	</div>
+</div>	
+		<div class="row c4">
+			<div class="col-md-12 c11 p-5" ><h1 id="d2">
+WELCOME</h1>
+			<p class="c4">This site provides an opportunity to the all communities of the world to reach out to 
+			each other for finding suitable marriage alliances. The site displays matrimonial
+			ads about the registered members who are looking out for the marriage alliances 
+			either for themselves or for their kith and kin.One can find matrimonial ads of
+			all communities belonging to all castes from all over the world. Ads can be 
+			registered online and immediately available for display. The service means we 
+			provide contact details of the suitable matches with the concern of the other party. 
+			Once paid will not be refundable.</p></div>
+			</div>
+			</div>
+			
+	
+		
+		<div class="row">
+		<div class="col-md-4 offset-4">
+		<div class="row c32 ">
+		<div class="col-md-11 p-3"><h1> Trusted by Millions</h1></div>
+		</div>
+		</div></div>
+		
+		 <div class="row c33 p-5">
+		 <div class="col-md-8 offset-2">
+		 <div class="row text-center">
+		 <div class="col-md-4">
+		 <i class="fa fa-user-circle" aria-hidden="true"></i>  Best Matches</div>
+		 <div class="col-md-4">
+		 <i class="fa fa-check-square" aria-hidden="true"></i>  Verified Profiles</div>
+		 <div class="col-md-4">
+		 <i class="fa fa-lock" aria-hidden="true"></i>  100% Privacy</div>
+		 </div>
+		 </div>
+		</div>
+		<div class="row">
+		<div class="col-md-10 offset-1">
+		<div class="row ">
+		<div class="col-md-12 p-5 c11"><h1>Personalized MatchMaking Service</h1>
+		<p class="c15">Jeevansathi Exclusive is a personalized matchmaking service by 
+		Jeevansathi where an experienced relationship advisor helps you to find a 
+		perfect soulmate. JS Exclusive is recommended if you’re busy, need help in 
+		contacting the opposite profile or want an expert to work with your profile on 
+		your behalf to find a match faster. </p></div>
+		</div>
+		 <div class="row p-3">
+		 <div class="col-md-6">
+		 <img src="{% static 'fd0.svg' %}" height="400px" width="100%"/></div>
+		 <div class="col-md-6 p-5">
+		 <h3>STEP 01</h3>
+			<h4>Relationship Manager</h4>
+			<h5>A Relationship Manager is assigned to understand your expectations and 
+			preferences</h5></div>
+			</div>
+			<div class="row">
+		 <div class="col-md-6 p-5">
+		 <h3>STEP 02</h3>
+			<h4>Handpicked Matches</h4>
+			<h5>Sharing authentic mutual matches with you on a weekly basis</h5></div>
+		 
+		 
+		 <div class="col-md-6 ">
+		 <img src="{% static 'fd.svg' %}" height="400px" width="100%"/></div>
+		 
+			</div>
+			<div class="row">
+		 <div class="col-md-6">
+		 <img src="{% static 'fd2.svg' %}" height="400px" width="100%"/></div>
+		 <div class="col-md-6 p-5">
+		 <h3>STEP 03</h3>
+			<h4>Scheduled Meetings</h4>
+			<h5>Arranging calls and setting up meetings with prospect families</h5></div>
+			</div>
+			<div class="row">
+		 <div class="col-md-6">
+		 <img src="{% static 'manager.png' %}" height="500px" width="100%"/></div>
+		 <div class="col-md-6 p-5">
+		 <h3>Exclusive Benefits</h3>
+		 <h1 class="p-4">Role of a Relationship Manager</h1>
+		 <ul class="c15 p-5">
+		 <li>Relationship manager acts as an advisor</li>
+		 <li>Understands your preferences and expectations</li>
+		  <li>Sends interests and shares acceptances on a weekly basis</li>
+		<li>Connects with the members you choose on your behalf</li>
+		<li>Sets up meetings with interested prospects</li>
+		</ul>
+		 </div>
+		 </div>
+		 
+		 
+		 
+		 
+		<div class="row c11">
+		<div class="col-md-10 text-center offset-1">
+		<div class="row c39 p-5">
+		<div class="col-md-4">
+		<i class="fa fa-user-plus c34" aria-hidden="true"></i>
+		<a class="nav-link" href='/register/'><h1>Register</h1></a></div>
+		<div class="col-md-4">
+		<i class="fa fa-user c34" aria-hidden="true"></i>
+	<a class="nav-link" href="tel:7778889990"><h1>Connect</h1></a></div>
+		<div class="col-md-4">
+		<i class="fa fa-comments c34" aria-hidden="true"></i>
+		<a class="nav-link" href='/contact/'><h1>Interact</h1></a>
+		
+		</div>
+		</div></div>
+		
+		
+		
+		
+		<div class="row">
+		<div class="col-md-11" style="margin-left:50px"><h1>Features & Policies</h1></div>
+		</div>
+		<div class="row p-3 c15">
+		<div class="col-md-4"><h3><i class="fa fa-comments" aria-hidden="true "></i>  Free SMS & Chat</h3><p> An important facility such as chat is available in our site, so that people can interact with each other.</p></div>
+		<div class="col-md-4"><h3><i class="fa fa-address-book" aria-hidden="true "></i>Auto Match Maker</h3><p> Some new members get registered daily. This matrimony system updates and shows you matched profile.</p></div>
+		<div class="col-md-4"><h3><i class="fa fa-users" aria-hidden="true "></i>Recommend File</h3><p> when you follow some-one, you can see the updates of people whom you follow.
+
+         </p></div>
+		 </div>
+		 <div class="row p-3 c15">
+		<div class="col-md-4"><h3><i class="fa fa-bell" aria-hidden="true "></i>Notification Alert</h3><p> The activities such as changing the display picture, birthday notification, photo requests.</p></div>
+		<div class="col-md-4"><h3><i class="fa fa-cog" aria-hidden="true "></i>Restrictions Settings</h3><p> Restrictions Enable Copying Photos & Video Disable Anti Spam System Provided.</p></div>
+		<div class="col-md-4"><h3><i class="fa fa-shield" aria-hidden="true "></i>Privacy Policy</h3><p> This electronic website is being operated and owned by perfectcouple.com
+
+
+
+ 
+
+         </p></div>
+		</div>
+		
+		</div>
+		</div></div>
+	
+		
+		
+		
+		{% endblock %}
+	
+		
