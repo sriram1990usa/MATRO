@@ -11,7 +11,7 @@ from .forms import *
 def homepage(request):
     b=showvideo.objects.all()
     context={'b':b}
-    return render(request,'website/homepage.html',context)
+    return render(request,'website/index.html',context)
 
 def register(request):    
     return render(request,"website/register.html")
